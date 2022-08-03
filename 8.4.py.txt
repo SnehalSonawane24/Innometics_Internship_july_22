@@ -1,0 +1,14 @@
+#Normal Distribution
+
+import math
+mu = 70
+sigma = 10
+
+X = 80
+pX = 0.5*(1+math.erf((X-mu)/(sigma*math.sqrt(2.0))))*100
+print('{:.2f}'.format(100-pX))
+
+Y = 60
+pY = 0.5*(1+math.erf((Y-mu)/(sigma*math.sqrt(2.0))))*100
+print('{:.2f}'.format(100 - pY))
+print('{:.2f}'.format(pY))

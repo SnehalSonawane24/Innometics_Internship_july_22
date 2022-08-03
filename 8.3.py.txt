@@ -1,0 +1,17 @@
+#Normal Distribution I
+
+
+import math
+#mean
+mu = 20
+# standard dev
+sigma = 2
+
+X = 19.5
+pX = 0.5*(1+math.erf((X-mu)/(sigma*math.sqrt(2.0))))
+print('{:.3f}'.format(pX))
+
+Y, Z = 22, 20
+pY = 0.5*(1+math.erf((Y-mu)/(sigma*math.sqrt(2.0))))
+pZ = 0.5*(1+math.erf((Z-mu)/(sigma*math.sqrt(2.0))))
+print('{:.3f}'.format(pY - pZ))
